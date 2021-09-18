@@ -1,6 +1,6 @@
 # NextJS Sequelize GraphQL Starter
 
-NextJS starter with GraphQL API routes and sequelize to interface with the database. This starter is set up for remote development (i.e. without internet access) -- it uses Apollo's Graphql Playground and a local version of `sequelize-cli`.
+NextJS starter with GraphQL API routes and sequelize to interface with a postgres database. This starter is set up for remote development (i.e. without internet access) -- it uses Apollo's Graphql Playground and a local version of `sequelize-cli`.
 
 ## Table of Contents
 
@@ -14,10 +14,10 @@ NextJS starter with GraphQL API routes and sequelize to interface with the datab
 
 1. Clone repo
 2. Create new database<sup id="a1">[1](#f1)</sup>
-3. Update `.env` with database info
+3. Create new `.env` file based on `.env.example`. Optionally update it with different database info
 4. Run initial migration and seed with `yarn db:seed`
 5. Install deps: `yarn`
-6. Run projects: `yarn dev`
+6. Run project: `yarn dev`
 
 GraphQL playground is available at `http://localhost:3000/api/graphql`. The site index displays a list of todo items.
 
@@ -34,10 +34,10 @@ GraphQL playground is available at `http://localhost:3000/api/graphql`. The site
 │   └───schemas
 └───src
 │   └───pages
-│       └───api
-│           │   graphql.js
-│       │   _app.js
-│       │   index.js
+│   │   └───api
+│   │   │   │   graphql.js
+│   │   │   _app.js
+│   │   │   index.js
 │   └───client
 │       │   index.js
 ```
@@ -56,7 +56,7 @@ GraphQL playground is available at `http://localhost:3000/api/graphql`. The site
 
 ## Commands
 
-`sequelize-cli` is a dev dependency of this starter, so I've aliased some frequently used commands with yarn.
+`sequelize-cli` is a dev dependency of this starter, so some of the most frequently used commands have been aliased with yarn.
 
 ``` bash
 db:create: create database
