@@ -1,0 +1,42 @@
+{
+  "name": "nextjs-sequelize-graphql-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "db:create": "sequelize-cli db:create",
+    "db:drop": "sequelize-cli db:drop",
+    "db:migrate": "sequelize-cli db:migrate",
+    "model:generate": "sequelize-cli model:generate",
+    "seed:generate": "sequelize-cli seed:generate",
+    "db:reseed": "sequelize-cli db:drop && sequelize-cli db:create && sequelize-cli db:migrate && sequelize-cli db:seed:all",
+    "db:seed": "sequelize-cli db:seed:all",
+    "db:seed:undo": "sequelize-cli db:seed:undo:all",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.4.9",
+    "@graphql-tools/schema": "^8.1.2",
+    "apollo-server-core": "^3.3.0",
+    "apollo-server-micro": "^3.3.0",
+    "dotenv": "^10.0.0",
+    "faker": "^5.5.3",
+    "graphql": "^15.5.1",
+    "micro": "^9.3.4",
+    "next": "^11.1.0",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sequelize": "^6.6.5",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-next": "11.1.2",
+    "sequelize-cli": "^6.2.0"
+  }
+}

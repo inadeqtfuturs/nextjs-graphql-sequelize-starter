@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@client": ["src/client"],
+      "@client/*": ["src/client/*"],
+      "@database": ["database"],
+      "@database/*": ["database/*"],
+      "@graphql": ["graphql"],
+      "@graphql/*": ["graphql/*"]
+    }
+  }
+}
