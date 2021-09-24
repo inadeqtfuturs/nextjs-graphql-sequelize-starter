@@ -42,9 +42,9 @@ GraphQL playground is available at `http://localhost:3000/api/graphql`. The site
 │       │   index.js
 ```
 
-`database`: This folder has been bootstrapped with `sequelize-cli`
-`graphql`: Folder for graphql schema and resolvers
-`src`: Source folder. `graphql.js` is the api route. `_app.js` imports the Apollo Client from `client/index.js`
+- `database`: This folder has been bootstrapped with `sequelize-cli`
+- `graphql`: Folder for graphql schema and resolvers
+- `src`: Source folder. `graphql.js` is the api route. `_app.js` imports the Apollo Client from `client/index.js`
 
 ## Workflow
 
